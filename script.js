@@ -1,6 +1,6 @@
 // script.js
 document.addEventListener('DOMContentLoaded', function () {
-  const images = document.querySelectorAll('.hero-bg');
+  const images = document.querySelectorAll('.picture-bg');
   let current = 0;
 
   function changeImage() {
