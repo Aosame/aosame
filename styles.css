@@ -112,6 +112,7 @@ header h1 {
 
 
 /* ========== Hero ========== */
+/* ========== スマホ表示 ========== */
 .picture {
   position: relative;
   height: 300px;
@@ -264,8 +265,8 @@ footer {
 
 footer .cont {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+justify-content: center;
+align-items: center;
   margin: 30px;
 }
 
@@ -288,6 +289,7 @@ footer li + li {
 
 
 /* ========== Media Queries ========== */
+/* ========== 700px以上 ========== */
 @media (min-width: 700px) {
   .pc-menu {
     display: block;
@@ -318,9 +320,14 @@ footer li + li {
   }
 }
 
+
+/* ========== 1150px以上 ========== */
 @media (min-width: 1150px) {
   .picture {
-    height: 900px;
+    background-color: #000;
+  }
+    .picture-bg {
+    background-size: contain; /* ← cover から変更 */
   }
 
   .features h1 {
