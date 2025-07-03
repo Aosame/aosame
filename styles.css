@@ -111,7 +111,7 @@ header h1 {
 }
 
 
-/* ========== Hero ========== */
+/* ========== Hero (Header画像)========== */
 .hero {
   position: relative;
   height: 300px;
@@ -288,6 +288,7 @@ footer li + li {
 
 
 /* ========== Media Queries ========== */
+/* ========== 700px以上 ========== */
 @media (min-width: 700px) {
   .pc-menu {
     display: block;
@@ -317,7 +318,7 @@ footer li + li {
     font-size: 19px;
   }
 }
-
+/* ========== 1150px以上 ========== */
 @media (min-width: 1150px) {
   .hero {
     height: 900px;
