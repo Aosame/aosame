@@ -111,15 +111,15 @@ header h1 {
 }
 
 
-/* ========== Hero (Header画像)========== */
-.hero {
+/* ========== Hero ========== */
+.picture {
   position: relative;
   height: 300px;
   overflow: hidden;
 }
 
 /* 背景画像用のdiv */
-.hero-bg {
+.picture-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -133,7 +133,7 @@ header h1 {
   z-index: 1;
 }
 
-.hero-bg.current {
+.picture-bg.current {
   opacity: 1;
 }
 
@@ -147,7 +147,7 @@ main h1 {
   text-align: center;
 }
 
-.koko h1 {
+.introduce h1 {
   font-size: 50px;
   padding-top: 75px;
   padding-bottom: 30px;
@@ -177,12 +177,12 @@ img {
   vertical-align: bottom;
 }
 
-.hero2 {
+.picture2 {
   position: relative;
   height: 600px;
 }
 
-.hero2 img {
+.picture2 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -191,7 +191,7 @@ img {
   transition: opacity 1s; */
 }
 
-.hero2 .tag {
+.picture2 .tag {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -288,7 +288,6 @@ footer li + li {
 
 
 /* ========== Media Queries ========== */
-/* ========== 700px以上 ========== */
 @media (min-width: 700px) {
   .pc-menu {
     display: block;
@@ -310,7 +309,7 @@ footer li + li {
     display: none;
   }
 
-  .hero {
+  .picture {
     height: 600px;
   }
 
@@ -318,9 +317,9 @@ footer li + li {
     font-size: 19px;
   }
 }
-/* ========== 1150px以上 ========== */
+
 @media (min-width: 1150px) {
-  .hero {
+  .picture {
     height: 900px;
   }
 
