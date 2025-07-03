@@ -35,6 +35,57 @@ a:hover {
   opacity: 0.5;
 }
 
+/* ========== ローディング ========== */
+/* ローディング画面 */
+#splash {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.splash-text {
+  color: #00aaff;
+  font-family: serif;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1.5;
+  display: inline-block;
+}
+
+.letter {
+  display: inline-block;
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+  animation: explode 2s forwards;
+  animation-delay: 1.3s;  /* ← ★1.3秒待ってから爆発 */
+}
+
+
+.letter.sub {
+  font-size: 1.5rem;
+  margin-top: 0.5em;
+  display: inline-block;
+}
+
+@keyframes explode {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(
+      calc(-100px + 200px * var(--rand-x, 0.5)),
+      calc(-100px + 200px * var(--rand-y, 0.5))
+    ) scale(2);
+    opacity: 0;
+  }
+}
+
 
 /* ========== Header ========== */
 header {
@@ -254,55 +305,6 @@ img {
   transform: none;
 }
 
-/* ローディング画面 */
-#splash {
-  position: fixed;
-  inset: 0;
-  background: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  overflow: hidden;
-}
-
-.splash-text {
-  color: #00aaff;
-  font-family: serif;
-  font-size: 3rem;
-  text-align: center;
-  line-height: 1.5;
-  display: inline-block;
-}
-
-.letter {
-  display: inline-block;
-  opacity: 1;
-  transform: translate(0, 0) scale(1);
-  animation: explode 2s forwards;
-  animation-delay: 1.25s;  /* ← ★1秒待ってから爆発 */
-}
-
-
-.letter.sub {
-  font-size: 1.5rem;
-  margin-top: 0.5em;
-  display: inline-block;
-}
-
-@keyframes explode {
-  0% {
-    transform: translate(0, 0) scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(
-      calc(-100px + 200px * var(--rand-x, 0.5)),
-      calc(-100px + 200px * var(--rand-y, 0.5))
-    ) scale(2);
-    opacity: 0;
-  }
-}
 
 
 /* ========== Footer ========== */
