@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     images[current].classList.add('current');
   }
 
-  setInterval(changeImage, 4000);
+  setInterval(changeImage, 2750);// 2.75秒後にコンテンツ表示
 });
 
 
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     setTimeout(() => {
       document.getElementById('splash').style.display = 'none';
       document.getElementById('main-content').style.display = 'block';
-    }, 3000);// 3秒後にコンテンツ表示
+    }, 3100);// 3.1秒後にコンテンツ表示
   });
 
 
